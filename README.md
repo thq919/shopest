@@ -10,9 +10,9 @@
 map:
 
 - core
-  - usecases (shared interphace)
-  - db (shared per page)
-  - http (shared per page)
+  - usecases (shared interface for domain/usecases)
+  - db (shared in source managers per page)
+  - http (shared in source managers per page)
   - errors (db/server types of errors)
  
 - features
@@ -20,9 +20,9 @@ map:
 		- data
 			- sources (local/remote)		
 			- model
-			- source_manager(repositories impl)
+			- source_manager(repositories impl of domain/inerface)
 		- domain 
-			- source_manager_interface (repositories interphace)
+			- source_manager_interface (repositories interface)
 			- entity
 			- usecases 
 		- presentation
