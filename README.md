@@ -16,17 +16,17 @@ map:
   - errors (db/server types of errors)
  
 - features
-	- feature_name	
+	- feature_name (single screen)	
 		- data
 			- sources (local/remote)		
-			- model
+			- model (extends domain/entity)
 			- source_manager(repositories impl of domain/inerface)
 		- domain 
 			- source_manager_interface (repositories interface)
 			- entity
-			- usecases 
+			- usecases (extends core/usecases)
 		- presentation
-			- state_manager
+			- state_manager (provider)
 			- pages
 			- widgets
 
