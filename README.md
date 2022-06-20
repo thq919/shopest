@@ -1,16 +1,42 @@
 # shopest
+### e-commerce example
+![image](https://github.com/thq919/shopest/blob/main/github_assets/screen.gif)
 
-A new Flutter project.
 
-## Getting Started
 
-This project is a starting point for a Flutter application.
 
-A few resources to get you started if this is your first Flutter project:
 
-- [Lab: Write your first Flutter app](https://flutter.dev/docs/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://flutter.dev/docs/cookbook)
+### architecture:
+map:
 
-For help getting started with Flutter, view our
-[online documentation](https://flutter.dev/docs), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+- core
+  - usecases (shared interphace)
+  - db (shared per page)
+  - http (shared per page)
+  - errors (db/server types of errors)
+ 
+- features
+	- feature_name	
+		- data
+			- sources (local/remote)		
+			- model
+			- source_manager(repositories impl)
+		- domain 
+			- source_manager_interface (repositories interphace)
+			- entity
+			- usecases 
+		- presentation
+			- state_manager
+			- pages
+			- widgets
+
+###  testing:
+```
+cd new-folder/shopest
+git clone git@github.com:thq919/shopest.git
+flutter run
+```
+in case of any issues try run
+```
+flutter doctor
+```
