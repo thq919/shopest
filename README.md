@@ -20,7 +20,7 @@ map:
 		- data
 			- sources (local/remote)		
 			- model (extends domain/entity)
-			- source_manager(repositories impl of domain/inerface)
+			- source_manager(repositories impl of domain/interface)
 		- domain 
 			- source_manager_interface (repositories interface)
 			- entity
